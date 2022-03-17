@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pingonline.netlify.app/sitemap.xml
