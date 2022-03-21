@@ -61,7 +61,7 @@ My users should be able to:
 
 ### Links
 - [Live Review](https://pingonline.netlify.app/)
-- [Frontend Mentor Solution Page]()
+- [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-html-css-sass-javascript-67lHHLX6N)
 
 ### Screenshots
 
