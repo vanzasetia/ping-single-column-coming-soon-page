@@ -6,7 +6,7 @@ $-input-height-tiny: rem(56);
   margin: rem(32) 0 rem(120);
 
   @include breakpoint-up("tiny") {
-    margin: rem(40) 0 rem(72);
+    margin: rem(45) 0 rem(72);
   }
 }
 
