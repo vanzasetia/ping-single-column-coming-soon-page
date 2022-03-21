@@ -13,4 +13,8 @@
 
 .header__logo {
   width: rem(60);
+
+  @include breakpoint-up("tiny") {
+    width: rem(90);
+  }
 }
