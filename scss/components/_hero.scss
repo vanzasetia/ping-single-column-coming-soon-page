@@ -1,0 +1,88 @@
+@use "../abstracts" as *;
+
+.hero {
+  margin: rem(32) 0 rem(120);
+}
+
+.hero__title {
+  margin-bottom: rem(15);
+  color: $gray;
+  font-size: rem(22);
+  font-weight: 300;
+}
+
+.hero__title--bold {
+  color: $very-dark-blue;
+  font-weight: 700;
+}
+
+.hero__form {
+  margin: rem(32) auto 0 auto;
+  max-width: rem(350);
+}
+
+.hero__form-control {
+  position: relative;
+}
+
+.hero__input {
+  display: block;
+  border: rem(1) solid $pale-blue;
+  border-radius: 2em;
+  padding: rem(10) rem(32);
+  width: 100%;
+  height: rem(40);
+
+  @include focus-visible($black);
+}
+
+.hero__input:not(:placeholder-shown) ~ .hero__label {
+  top: rem(-20);
+  left: rem(34);
+  color: $very-dark-blue;
+}
+
+.hero__label {
+  position: absolute;
+  top: rem(14);
+  left: rem(32);
+  color: rgb(184, 199, 237);
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.hero__alert {
+  margin: rem(10) 0 rem(20);
+  color: $light-red;
+  font-style: italic;
+}
+
+.hero__submit-button {
+  display: block;
+  margin-top: rem(10);
+  border: none;
+  border-radius: 2em;
+  box-shadow: 0 rem(5) rem(10) rem(2) rgba(76, 123, 243, 0.2);
+  background-color: $blue;
+  cursor: pointer;
+  padding: rem(12);
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+
+  @include focus-visible($black);
+
+  @include on-event {
+    background-color: rgba($blue, 0.8);
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: background-color 150ms ease-in-out;
+  }
+}
+
+.hero__image {
+  margin-top: rem(72);
+}

@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__home {
+  display: inline-block;
+
+  @include focus-visible($black);
+}
+
+.header__logo {
+  width: rem(60);
+}

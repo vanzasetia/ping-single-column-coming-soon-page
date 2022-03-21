@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+$-gap-social-media-link: rem(12);
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: rem(27);
+
+  @supports (gap: $-gap-social-media-link) {
+    gap: $-gap-social-media-link;
+  }
+}
+
+/**
+ * 1. ".footer__item:not(:first-child)" has the
+ *    SAME specificity with .footer__item + .footer__item".
+ */
+.footer__item + .footer__item {
+  margin-left: $-gap-social-media-link;
+
+  @supports (gap: $-gap-social-media-link) {
+    margin-left: 0;
+  }
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: rem(1) solid rgba($blue, 0.15);
+  border-radius: 50%;
+  width: rem(32);
+  height: rem(32);
+  color: $blue;
+
+  @include focus-visible($black);
+
+  @include on-event {
+    background-color: $blue;
+    color: $white;
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: all 150ms ease-in-out;
+  }
+}
+
+.footer__copyright {
+  color: $gray;
+}
