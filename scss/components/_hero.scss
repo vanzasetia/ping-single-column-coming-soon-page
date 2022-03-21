@@ -1,5 +1,4 @@
 @use "../abstracts" as *;
-
 $-input-height-tiny: rem(56);
 
 .hero {
@@ -129,9 +128,9 @@ $-input-height-tiny: rem(56);
   }
 
   @include breakpoint-up("tiny") {
-    height: $-input-height-tiny;
     flex-basis: rem(200);
     margin-top: 0;
+    height: $-input-height-tiny;
   }
 
   @media screen and (prefers-reduced-motion: no-preference) {

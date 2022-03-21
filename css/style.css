@@ -503,9 +503,9 @@ br + br {
 }
 @media screen and (min-width: 44.375em) {
   .hero__submit-button {
-    height: 3.5rem;
     flex-basis: 12.5rem;
     margin-top: 0;
+    height: 3.5rem;
   }
 }
 @media screen and (prefers-reduced-motion: no-preference) {
