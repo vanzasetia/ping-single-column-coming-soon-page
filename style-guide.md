@@ -36,8 +36,4 @@ The designs were created to the following widths:
 
 ## Icons
 
-For the social icons, you can use a font icon library. Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com)
+For the social icons, I use [IcoMoon](https://icomoon.io) - Free library (default library, no need to import any library).

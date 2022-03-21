@@ -1,11 +1,11 @@
-![banner](./images/banner.png)
+![banner](./images/banner.jpg)
 
 <p align="left">
   <a href="https://www.frontendmentor.io/challenges?difficulties=1" target="_blank"><img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty"></a>
   <img alt="Repo size" src="https://img.shields.io/github/repo-size/vanzasetia/ping-single-column-coming-soon-page?style=for-the-badge&logo=github">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
   <img alt="Last commit" src="https://img.shields.io/github/last-commit/vanzasetia/ping-single-column-coming-soon-page?style=for-the-badge&logo=git">
-  <img alt="Netlify" src="https://img.shields.io/netlify/?style=for-the-badge&logo=netlify">
+  <img alt="Netlify" src="https://img.shields.io/netlify/ce7860bd-0a3d-43dd-b16b-e4a1a6ea7df6?style=for-the-badge&logo=netlify">
   <img alt="License" src="https://img.shields.io/github/license/vanzasetia/ping-single-column-coming-soon-page?color=green&style=for-the-badge&logo=github">
 </p>
 
@@ -32,10 +32,8 @@
   - [Screenshots](#screenshots)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgements](#acknowledgements)
 - [License](#license)
 - [References](#references)
 
@@ -83,10 +81,8 @@ My users should be able to:
 
 > \* I follow guidelines. [See what guidelines that I follow.](./docs/README.md#guidelines)
 
-### What I Learned
-
 ### Useful Resources
-
+- [Get you <head> straight](https://youtu.be/MHyAOZ45vnU) - It's a YouTube video where Harry Roberts ([@csswizardry](https://github.com/csswizardry)) tells the optimum order for the meta tags so that the site can load as soon as possible.
 ## Author
 [(Back to top)](#table-of-contents)
 
@@ -94,9 +90,6 @@ My users should be able to:
 - Twitter - [@vanzasetia](https://twitter.com/vanzasetia)
 - Code Newbie - [@vanzasetia](https://community.codenewbie.org/vanzasetia)
 - Want to see me on other platform? [Check my linktree!](https://linktr.ee/vanzasetia)
-
-## Acknowledgements
-[(Back to top)](#table-of-contents)
 
 ## License
 [(Back to top)](#table-of-contents)
