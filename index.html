@@ -10,7 +10,7 @@
     <title>Frontend Mentor | Ping coming soon page</title>
     <!-- 
     Directly used the preloaded font family
-    to prevent producing error message in the console
+    to prevent producing warning messages in the console
     -->
     <!-- prettier-ignore -->
     <style>@font-face{font-family:"Libre Franklin";font-style:normal;font-weight:700;font-display:swap;src:local("Libre Franklin"), local("Libre Franklin Bold"), local("LibreFranklin Bold"), local("LibreFranklin-Bold"), url("/fonts/LibreFranklinBold.woff2") format("woff2"), url("fonts/LibreFranklinBold.woff") format("woff")}@font-face{font-family:"Libre Franklin";font-style:normal;font-weight:600;font-display:swap;src:local("Libre Franklin"), local("Libre Franklin SemiBold"), local("LibreFranklin SemiBold"), local("LibreFranklin-SemiBold"), url("/fonts/LibreFranklinSemiBold.woff2") format("woff2"), url("fonts/LibreFranklinSemiBold.woff") format("woff")}@font-face{font-family:"Libre Franklin";font-style:normal;font-weight:300;font-display:swap;src:local("Libre Franklin"), local("Libre Franklin Light"), local("LibreFranklin Light"), local("LibreFranklin-Light"), url("/fonts/LibreFranklinLight.woff2") format("woff2"), url("fonts/LibreFranklinLight.woff") format("woff")}</style>
@@ -37,7 +37,7 @@
       type="font/woff2"
       crossorigin
     />
-    <script src="/" defer></script>
+    <script src="/js/app.js" defer></script>
     <!-- Favicons -->
     <link rel="icon" href="/images/frontendmentor.png" />
     <link
@@ -127,9 +127,97 @@
     <div class="container">
       <header class="header">
         <a href="#main" class="skip-content">Skip to main content.</a>
+        <a href="/" class="header__home">
+          <img
+            src="/svg/logo.svg"
+            alt="Ping - Home"
+            class="header__logo"
+            width="86"
+            height="26"
+          />
+        </a>
       </header>
-      <main id="main" class="hero"></main>
-      <footer class="footer"></footer>
+      <main id="main" class="hero">
+        <h1 class="hero__title">
+          We are launching
+          <span class="hero__title--bold">soon!</span>
+        </h1>
+        <p class="hero__description">Subscribe and get notified</p>
+        <form
+          class="hero__form js-heroForm"
+          name="subscribe"
+          method="POST"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+          hidden
+        >
+          <p class="hidden" aria-hidden="true">
+            <label><input name="bot-field" /></label>
+          </p>
+          <div class="hero__container">
+            <div class="hero__form-control">
+              <input
+                type="email"
+                id="heroInput"
+                class="hero__input js-heroInput"
+                name="email"
+                placeholder=" "
+                required
+                aria-describedby="heroAlert"
+              />
+              <label for="heroInput" class="hero__label"
+                >Your email address...</label
+              >
+              <p
+                id="heroAlert"
+                class="hero__alert js-heroAlert"
+                hidden
+              >
+                Please provide a valid email address
+              </p>
+            </div>
+            <button class="hero__submit-button" type="submit">
+              Notify Me
+            </button>
+          </div>
+        </form>
+        <img
+          src="/images/illustration-dashboard.png"
+          alt=""
+          class="hero__image"
+          width="640"
+          height="383"
+          aria-hidden="true"
+        />
+      </main>
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="/" class="footer__social">
+              <span class="sr-only">Facebook</span>
+              <!-- prettier-ignore -->
+              <svg width="14" height="14" class="footer__icon"><path fill="#4c7bf3" d="M8.313 2.625h2.188V0H8.313A3.066 3.066 0 0 0 5.25 3.063v1.313H3.5v2.625h1.75v7h2.625v-7h2.188l.438-2.625H7.876V3.063c0-.237.2-.438.438-.438z"/></svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="/" class="footer__social">
+              <span class="sr-only">Twitter</span>
+              <!-- prettier-ignore -->
+              <svg width="14" height="14" class="footer__icon"><path fill="#4c7bf3" d="M14 3.095a5.642 5.642 0 0 1-1.649.451 2.888 2.888 0 0 0 1.263-1.589 5.762 5.762 0 0 1-1.824.697 2.87 2.87 0 0 0-2.097-.905 2.87 2.87 0 0 0-2.797 3.525 8.15 8.15 0 0 1-5.92-3.002 2.874 2.874 0 0 0 .889 3.834 2.888 2.888 0 0 1-1.302-.358v.036c0 1.392.99 2.554 2.305 2.816a2.863 2.863 0 0 1-1.298.049 2.881 2.881 0 0 0 2.682 1.996 5.76 5.76 0 0 1-4.254 1.189 8.121 8.121 0 0 0 4.405 1.291c5.283 0 8.173-4.378 8.173-8.173 0-.126-.003-.249-.008-.372a5.783 5.783 0 0 0 1.433-1.485z"/></svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="/" class="footer__social">
+              <span class="sr-only">Instagram</span>
+              <!-- prettier-ignore -->
+              <svg width="14" height="14" class="footer__icon"><path fill="#4c7bf3" d="M7 1.261c1.87 0 2.092.008 2.827.041.684.03 1.053.145 1.299.241.325.126.561.279.804.522.246.246.396.479.525.804.096.246.211.618.241 1.299.033.738.041.96.041 2.827s-.008 2.092-.041 2.827c-.03.684-.145 1.053-.241 1.299a2.172 2.172 0 0 1-.522.804 2.204 2.204 0 0 1-.804.525c-.246.096-.618.211-1.299.241-.738.033-.96.041-2.827.041s-2.092-.008-2.827-.041c-.684-.03-1.053-.145-1.299-.241a2.172 2.172 0 0 1-.804-.522 2.204 2.204 0 0 1-.525-.804c-.096-.246-.211-.618-.241-1.299-.033-.738-.041-.96-.041-2.827s.008-2.092.041-2.827c.03-.684.145-1.053.241-1.299.126-.325.279-.561.522-.804.246-.246.479-.396.804-.525.246-.096.618-.211 1.299-.241.736-.033.957-.041 2.827-.041zM7 0C5.1 0 4.862.008 4.115.041 3.371.074 2.86.194 2.417.366c-.462.18-.853.418-1.241.809a3.416 3.416 0 0 0-.809 1.239c-.172.446-.293.954-.325 1.698C.009 4.861.001 5.099.001 7s.008 2.138.041 2.885c.033.744.153 1.255.325 1.698.18.462.418.853.809 1.241.388.388.779.629 1.239.807.446.172.954.293 1.698.325.746.033.984.041 2.885.041s2.138-.008 2.885-.041c.744-.033 1.255-.153 1.698-.325.459-.178.85-.418 1.239-.807s.629-.779.807-1.239c.172-.446.293-.954.325-1.698.033-.746.041-.984.041-2.885s-.008-2.138-.041-2.885c-.033-.744-.153-1.255-.325-1.698a3.271 3.271 0 0 0-.801-1.244 3.423 3.423 0 0 0-1.239-.807c-.446-.172-.954-.293-1.698-.325-.749-.036-.987-.044-2.888-.044z"/><path fill="#4c7bf3" d="M7 3.404C5.015 3.404 3.404 5.015 3.404 7S5.015 10.596 7 10.596 10.596 8.985 10.596 7A3.597 3.597 0 0 0 7 3.404zm0 5.928a2.333 2.333 0 1 1 .001-4.665A2.333 2.333 0 0 1 7 9.332zM11.577 3.262a.839.839 0 1 1-1.678 0 .839.839 0 0 1 1.678 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          © Copyright Ping. All rights reserved.
+        </p>
+      </footer>
     </div>
     <script>
       if ("serviceWorker" in navigator) {
