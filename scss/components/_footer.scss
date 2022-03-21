@@ -1,6 +1,10 @@
 @use "../abstracts" as *;
 $-gap-social-media-link: rem(12);
 
+.footer {
+  color: $gray;
+}
+
 .footer__list {
   display: flex;
   align-items: center;
@@ -44,8 +48,4 @@ $-gap-social-media-link: rem(12);
   @media screen and (prefers-reduced-motion: no-preference) {
     transition: all 150ms ease-in-out;
   }
-}
-
-.footer__copyright {
-  color: $gray;
 }
