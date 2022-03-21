@@ -73,6 +73,10 @@ $-input-height-tiny: rem(56);
   }
 }
 
+.hero__input.is-invalid {
+  border-color: $light-red;
+}
+
 .hero__input:not(:placeholder-shown) ~ .hero__label {
   top: rem(-24);
   left: rem(34);
