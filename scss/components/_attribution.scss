@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.attribution {
+  margin-top: rem(60);
+  line-height: 1.6;
+}
+
+.attribution__link {
+  color: $blue;
+
+  @include focus-visible($black);
+
+  @include on-event {
+    text-decoration: none;
+  }
+}
